@@ -1,0 +1,69 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 100%;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #fade{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 5;
+    opacity: 0.6;
+  }
+ #modal {
+  display: none;
+  z-index: 10;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+ }
+ #modalContent {
+  padding: 20px;
+ }
+ #modalContent h3 {
+  text-align: center;
+  font-size: 32pt;
+  font-weight: lighter;
+  margin-bottom: 5%;
+ }
+#buttons {
+margin-top:2%;
+}
+ #modalContent input{
+ margin-left: 20%;
+  width: 60%;
+ }
+ #adicionar {
+  margin-left: 50%;
+ }
+ #cancelar {
+ margin-left: 20%;
+ }
+ #modalContent label{
+  display: block;
+  margin-left: 20%;
+ }
+ #descricao {
+   width: 60%;
+   margin-left: 20%;
+ }
+ 

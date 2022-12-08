@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <base href="/">
+    <title>Add Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./dist/index.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <div id="modal" class="container">
+      <div id="modalContent">
+        <h3>Registro de hemonúcleo</h3>
+        <label>Nome do hemonúcleo</label>
+        <input type="text" id="hemonucleoNome">
+        <label>Descrição do hemonúcleo</label>
+        <textarea id="descricao" class="materialize-textarea"></textarea>   
+        <div id="buttons">
+          <a id="cancelar" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">close</i></a> 
+          <a id="adicionar" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a> 
+        </div>
+         
+      </div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <div id="fade">
+    </div>
+    
+  </body>
+</html>
