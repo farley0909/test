@@ -5,7 +5,7 @@ let route_cadastro = Router()
 
 //select  ST_AsText(geometria) from ponto_de_interesse
 
-route_cadastro.post('/cadastro/',async (req, res)=>{
+route_cadastro.posdfst('/cadastro/',async (req, res)=>{
   let {nome, desc, lat, long} = req.body
     try {
           let client = new Client({
